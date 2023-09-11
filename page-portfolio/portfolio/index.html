@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        } else {
+        document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-bold text-lg text-primary block py-6 uppercase">Pawl</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger_line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger_line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger_line transition duration-300 ease-in-out origin-top-left"></span>
+                    </button>
+                    
+                    <nav id="nav_menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About me</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                            </li>
+                            <li class="flex items-center pl-8 smax:mt-5 sm:mt-5 lg:mt-0">
+                                <div class="flex relative">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div class="flex h-6 w-11 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <!-- Header end -->
+
+        <!-- Hero section start -->
+        <section id="home" class="pt-36 dark:bg-dark">
+            <div class="container">
+                <div class="flex flex-wrap relative">
+                    <div class="w-full self-center px-4 lg:w-1/2">
+                        <h1 class="text-base font-semibold text-primary md:text-xl">Hello 👋, I am <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Paulinus Lambert Subiantoro</span></h1>
+                        <h2 class="font-medium text-slate-500 text-lg mb-5 lg:text-2xl"><span class="font-medium text-dark dark:text-white">Frontend</span> Web Developer</h2>
+                        <p class="font-medium text-secondary mb-10 leading-relaxed">Hello There! <br> Ohh yes, you can call me <span class="text-dark font-bold dark:text-white">Pawl 😁</span></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+    <script src="../../dist/js/script.js"></script>
+</body>
+</html>
